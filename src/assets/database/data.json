@@ -1,0 +1,307 @@
+{
+    "maincategory": [
+      {
+        "name": "Male",
+        "id": 1
+      },
+      {
+        "id": 2,
+        "name": "Female"
+      },
+      {
+        "id": 3,
+        "name": "Kids"
+      }
+    ],
+    "subcategory": [
+      {
+        "name": "Jeans",
+        "id": 1
+      },
+      {
+        "name": "Tshirt",
+        "id": 2
+      },
+      {
+        "name": "Shirt",
+        "id": 3
+      },
+      {
+        "id": 4,
+        "name": "Trouer"
+      }
+    ],
+    "brand": [
+      {
+        "name": "Adidas",
+        "id": 1
+      },
+      {
+        "id": 2,
+        "name": "Mufti"
+      },
+      {
+        "id": 3,
+        "name": "Polo"
+      },
+      {
+        "name": "Zara",
+        "id": 4
+      },
+      {
+        "name": "Gucci",
+        "id": 5
+      },
+      {
+        "id": 6,
+        "name": "Tommy Hilfiger"
+      }
+    ],
+    "product": [
+      {
+        "id": 0,
+        "name": "Kids Jeans Slim Fit",
+        "maincategory": "Kids",
+        "subcategory": "Jeans",
+        "brand": "Mufti",
+        "color": "Blue",
+        "size": "26",
+        "baseprice": 4500,
+        "discount": 45,
+        "finalprice": 2475,
+        "stock": "Out Of Stock",
+        "pic1": "p1.jpg",
+        "pic2": "p2.jpg",
+        "pic3": "p3.jpg",
+        "pic4": "p4.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Male Jeans Slim Fit Mufti",
+        "maincategory": "Male",
+        "subcategory": "Jeans",
+        "brand": "Mufti",
+        "color": "Black",
+        "size": "36",
+        "baseprice": 4560,
+        "discount": 45,
+        "finalprice": 2508,
+        "stock": "In Stock",
+        "description": "",
+        "pic1": "p5.jpg",
+        "pic2": "p7.jpg",
+        "pic3": "p8.jpg",
+        "pic4": "p9.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Male Jeans Regular Fit",
+        "maincategory": "Male",
+        "subcategory": "Jeans",
+        "brand": "Mufti",
+        "color": "Blue",
+        "size": "36",
+        "baseprice": 7889,
+        "discount": 55,
+        "finalprice": 3550,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p11.jpg",
+        "pic2": "p10.jpg",
+        "pic3": "p12.jpg",
+        "pic4": "p13.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Female Tshirt Gucci",
+        "maincategory": "Female",
+        "subcategory": "Tshirt",
+        "brand": "Gucci",
+        "color": "White",
+        "size": "MD",
+        "baseprice": 8500,
+        "discount": 25,
+        "finalprice": 6375,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p14.jpg",
+        "pic2": "p15.jpg",
+        "pic3": "p16.jpg",
+        "pic4": "p17.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Man Jeans Adidas ",
+        "maincategory": "Male",
+        "subcategory": "Jeans",
+        "brand": "Tommy Hilfiger",
+        "color": "Black",
+        "size": "36",
+        "baseprice": 7890,
+        "discount": 45,
+        "finalprice": 4339,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p18.jpg",
+        "pic2": "p19.jpg",
+        "pic3": "p20.jpg",
+        "pic4": "p21.jpg"
+      },
+      {
+        "name": "Male Jeans Adidas Slim Fit",
+        "maincategory": "Male",
+        "subcategory": "Jeans",
+        "brand": "Adidas",
+        "color": "Blue",
+        "size": "38",
+        "baseprice": 4560,
+        "discount": 45,
+        "finalprice": 2508,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p22.jpg",
+        "pic2": "p23.jpg",
+        "pic3": "p24jpg",
+        "pic4": "p25jpg",
+        "id": 5
+      },
+      {
+        "name": "Man Tshirt Tommy Hilfiger",
+        "maincategory": "Male",
+        "subcategory": "Tshirt",
+        "brand": "Tommy Hilfiger",
+        "color": "Black",
+        "size": "LG",
+        "baseprice": 7800,
+        "discount": 80,
+        "finalprice": 1560,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p26.jpg",
+        "pic2": "p27.jpg",
+        "pic3": "p28.jpg",
+        "pic4": "p29jpg",
+        "id": 6
+      },
+      {
+        "name": "Female Tshirt White Adidas",
+        "maincategory": "Female",
+        "subcategory": "Tshirt",
+        "brand": "Adidas",
+        "color": "White",
+        "size": "SM",
+        "baseprice": 4560,
+        "discount": 60,
+        "finalprice": 1824,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p30.jpg",
+        "pic2": "p31.jpg",
+        "pic3": "p1.jpg",
+        "pic4": "p2.jpg",
+        "id": 7
+      },
+      {
+        "name": "Kids Tshirt Blue Polo",
+        "maincategory": "Kids",
+        "subcategory": "Tshirt",
+        "brand": "Polo",
+        "color": "Blue",
+        "size": "SM",
+        "baseprice": 1544,
+        "discount": 44,
+        "finalprice": 864,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p12.jpg",
+        "pic2": "p5.jpg",
+        "pic3": "p6.jpg",
+        "pic4": "p9.jpg",
+        "id": 8
+      },
+      {
+        "name": "Female Trouser Black",
+        "maincategory": "Female",
+        "subcategory": "Trouer",
+        "brand": "Zara",
+        "color": "Black",
+        "size": "30",
+        "baseprice": 4844,
+        "discount": 44,
+        "finalprice": 2712,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p10.jpg",
+        "pic2": "p11.jpg",
+        "pic3": "p14.jpg",
+        "pic4": "p15.jpg",
+        "id": 9
+      },
+      {
+        "name": "Female Jeans Ripped ",
+        "maincategory": "Female",
+        "subcategory": "Jeans",
+        "brand": "Tommy Hilfiger",
+        "color": "Blue",
+        "size": "32",
+        "baseprice": 9800,
+        "discount": 55,
+        "finalprice": 4410,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p20.jpg",
+        "pic2": "p30.jpg",
+        "pic3": "p21.jpg",
+        "pic4": "p12.jpg",
+        "id": 10
+      },
+      {
+        "name": "Male Tshirt White Polo",
+        "maincategory": "Male",
+        "subcategory": "Tshirt",
+        "brand": "Polo",
+        "color": "White",
+        "size": "LG",
+        "baseprice": 9800,
+        "discount": 85,
+        "finalprice": 1470,
+        "stock": "In Stock",
+        "description": "This is Sample Product",
+        "pic1": "p12.jpg",
+        "pic2": "p2.jpg",
+        "pic3": "p1.jpg",
+        "pic4": "p15.jpg",
+        "id": 11
+      }
+    ],
+    "user": [
+      {
+        "id": 0
+      }
+    ],
+    "cart": [
+      {
+        "id": 0
+      }
+    ],
+    "wishlist": [
+      {
+        "id": 0
+      }
+    ],
+    "checkout": [
+      {
+        "id": 0
+      }
+    ],
+    "contact": [
+      {
+        "id": 0
+      }
+    ],
+    "newslatter": [
+      {
+        "id": 0
+      }
+    ]
+  }
