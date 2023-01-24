@@ -1,7 +1,12 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 export default function Navbar() {
+    var navigate = useNavigate()
+    function logout(){
+        localStorage.clear()
+        navigate("/login")
+    }
     return (
         <>
             <div className="py-1 bg-black">
@@ -25,8 +30,8 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-                <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                <div className="container ">
                     <Link className="navbar-brand" to="/">Eshopper</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="oi oi-menu"></span> Menu
@@ -38,7 +43,6 @@ export default function Navbar() {
                             <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
                             <li className="nav-item"><Link to="/shop/All/" className="nav-link">Shop</Link></li>
                             <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
-                            <li className="nav-item"><Link to="/admin-home" className="nav-link">Admin</Link></li>
                             <li className="nav-item cta cta-colored"><Link to="/cart" className="nav-link"><span className="icon-shopping_cart"></span>[0]</Link></li>
                             {
                                 localStorage.getItem("login") ?
@@ -47,7 +51,7 @@ export default function Navbar() {
                                         <div className="dropdown-menu" aria-labelledby="dropdown04">
                                             <Link className="dropdown-item" to="/profile">Profile</Link>
                                             <Link className="dropdown-item" to="/cart">Cart</Link>
-                                            <Link className="dropdown-item" to="#">Logout</Link>
+                                            <button className="dropdown-item" onClick={logout}>Logout</button>
                                         </div>
                                     </li> :
                                     <li className="nav-item"><Link to="/login" className="nav-link">Login</Link></li>

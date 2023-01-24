@@ -4,17 +4,6 @@ import { Link } from 'react-router-dom'
 export default function About() {
     return (
         <>
-            <div className="hero-wrap hero-bread" style={{ backgroundImage: "url('assets/images/bg_6.jpg')" }}>
-                <div className="container">
-                    <div className="row no-gutters slider-text align-items-center justify-content-center">
-                        <div className="col-md-9 ftco-animate text-center">
-                            <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home</Link></span> <span>About</span></p>
-                            <h1 className="mb-0 bread">About Us</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <section className="ftco-section ftco-no-pt ftco-no-pb">
                 <div className="container">
                     <div className="row no-gutters ftco-services">

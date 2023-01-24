@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState,useEffect } from 'react'
+import { Link,useNavigate } from 'react-router-dom'
+import { useSelector,useDispatch } from 'react-redux'
 
-
+import {getUser,addUser} from "../Store/ActionCreators/UserActionCreators"
 export default function Login() {
     var [data, setdata] = useState({
         username: "",
         password: ""
     })
+    var users = useSelector((state)=>state.UserStateData)
+    var dispatch = useDispatch()
+    var navigate = useNavigate()
     function getData(e) {
         var name = e.target.name
         var value = e.target.value
@@ -19,14 +23,27 @@ export default function Login() {
     }
     function postData(e) {
         e.preventDefault()
-        alert(`
-                Username    : ${data.username}
-                Password    : ${data.password}
-            `)
+        var user = users.find((item)=>item.username===data.username && item.password===data.password)
+        if(user){
+            localStorage.setItem("login",true)
+            localStorage.setItem("name",user.name)
+            localStorage.setItem("username",user.username)
+            localStorage.setItem("userid",user.id)
+            localStorage.setItem("role",user.role)
+            if(user.role==="Admin")
+            navigate("/admin-home")
+            else
+            navigate("/profile")
+        }
+        else
+        alert("Invalid Username or Password!!!")
     }
+    useEffect(()=>{
+        dispatch(getUser())
+    },[])
     return (
         <>
-            <div className="hero-wrap hero-bread" style={{ backgroundImage: "url('assets/images/bg_6.jpg')" }}>
+            <div className="hero-wrap hero-bread">
                 <div className="container">
                     <div className="row no-gutters slider-text align-items-center justify-content-center">
                         <div className="col-md-9 ftco-animate text-center">

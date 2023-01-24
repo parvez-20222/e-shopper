@@ -158,3 +158,237 @@ export async function deleteProductAPI(data){
     })
     return await response.json()
 } 
+
+//services for User
+export async function createUserAPI(data){
+    var response = await fetch("/user",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function getUserAPI(){
+    var response = await fetch("/user",{
+        method:"get",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateUserAPI(data){
+    var response = await fetch("/user/"+data.id,{
+        method:"put",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function deleteUserAPI(data){
+    var response = await fetch("/user/"+data.id,{
+        method:"delete",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+} 
+
+//services for Cart
+export async function createCartAPI(data){
+    var response = await fetch("/cart",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function getCartAPI(){
+    var response = await fetch("/cart",{
+        method:"get",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateCartAPI(data){
+    var response = await fetch("/cart/"+data.id,{
+        method:"put",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function deleteCartAPI(data){
+    var response = await fetch("/cart/"+data.id,{
+        method:"delete",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+} 
+
+
+//services for Wishlist
+export async function createWishlistAPI(data){
+    var response = await fetch("/wishlist",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function getWishlistAPI(){
+    var response = await fetch("/wishlist",{
+        method:"get",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateWishlistAPI(data){
+    var response = await fetch("/wishlist/"+data.id,{
+        method:"put",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function deleteWishlistAPI(data){
+    var response = await fetch("/wishlist/"+data.id,{
+        method:"delete",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+} 
+
+
+//services for checkout
+export async function createCheckoutAPI(data){
+    var response = await fetch("/checkout",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function getCheckoutAPI(){
+    var response = await fetch("/checkout",{
+        method:"get",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateCheckoutAPI(data){
+    var response = await fetch("/checkout/"+data.id,{
+        method:"put",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function deleteCheckoutAPI(data){
+    var response = await fetch("/checkout/"+data.id,{
+        method:"delete",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+} 
+
+
+
+//services for Contact
+export async function createContactAPI(data){
+    var response = await fetch("/contact",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function getContactAPI(){
+    var response = await fetch("/contact",{
+        method:"get",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateContactAPI(data){
+    var response = await fetch("/contact/"+data.id,{
+        method:"put",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function deleteContactAPI(data){
+    var response = await fetch("/contact/"+data.id,{
+        method:"delete",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+} 
+
+//services for Newslatter
+export async function createNewslatterAPI(data){
+    var response = await fetch("/newslatter",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return await response.json()
+} 
+export async function getNewslatterAPI(){
+    var response = await fetch("/newslatter",{
+        method:"get",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+}
+export async function deleteNewslatterAPI(data){
+    var response = await fetch("/newslatter/"+data.id,{
+        method:"delete",
+        headers:{
+            "content-type":"application/json"
+        }
+    })
+    return await response.json()
+} 

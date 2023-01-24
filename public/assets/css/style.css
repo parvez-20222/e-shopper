@@ -4,9 +4,9 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- .style{
-  background-color:rgba(251, 236, 96, 0.985);
- }
+.myslider{
+  background-color: rgb(202, 202, 127);
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -1336,11 +1336,9 @@ pre {
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
   color: #212529; }
   .table th,
   .table td {
-    padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6; }
   .table thead th {
@@ -1351,7 +1349,7 @@ pre {
 
 .table-sm th,
 .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.1rem; }
 
 .table-bordered {
   border: 1px solid #dee2e6; }
@@ -6113,7 +6111,7 @@ button.bg-dark:focus {
   .align-self-md-stretch {
     -ms-flex-item-align: stretch !important;
     -ms-grid-row-align: stretch !important;
-    align-self: stretch !important; } 
+    align-self: stretch !important; } }
 
 @media (min-width: 992px) {
   .flex-lg-row {
@@ -9533,9 +9531,10 @@ h1, h2, h3, h4, h5,
 textarea.form-control {
   height: inherit !important; }
 
-/* .ftco-animate { */
-  /* opacity: 0;
-  visibility: hidden; } */
+.ftco-animate {
+  /* opacity: 0; */
+  /* visibility: hidden;  */
+}
 
 .bg-primary {
   background: #dbcc8f !important; }
@@ -9551,7 +9550,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -10669,4 +10668,3 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-  }

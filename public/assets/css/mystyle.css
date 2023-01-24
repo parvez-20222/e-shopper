@@ -1,0 +1,19 @@
+.mytable{
+    width: 100%;
+    overflow: auto;
+}
+.mytable th,td{
+    border: 2px solid rgb(241, 236, 236);
+}
+.icon{
+    font-size: 30px;
+}
+.bcolor{
+    background-color: rgba(57, 150, 154, 0.363);
+}
+.b1color{
+    background-color: rgba(123, 87, 181, 0.77)
+}
+.b2color{
+    background-color: rgba(199, 86, 157, 0.898)
+}
